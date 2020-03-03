@@ -1,5 +1,5 @@
 <?php
-namespace timgws\test\Mocks;
+namespace zazmaster\test\Mocks;
 
 
 /**
@@ -7,7 +7,7 @@ namespace timgws\test\Mocks;
  *
  * Connection, with mocked collection.
  *
- * @package timgws\test\Mocks
+ * @package zazmaster\test\Mocks
  */
 class Connection extends \Jenssegers\Mongodb\Connection implements \Jenssegers\Mongodb\Contracts\ConnectionContract
 {

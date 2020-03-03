@@ -1,13 +1,13 @@
 <?php
 
-namespace timgws\test;
+namespace zazmaster\test;
 
 use \PHPUnit\Framework\TestCase;
 use Illuminate\Database\Connection as Connection;
-use Illuminate\Database\Query\Builder;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Query\Grammars\MySqlGrammar as MySQLGrammar;
 use Illuminate\Database\Query\Processors\MySqlProcessor as MySQLProcessor;
-use timgws\QueryBuilderParser;
+use zazmaster\QueryBuilderParserEloquent;
 
 class CommonQueryBuilderTests extends TestCase
 {
@@ -46,7 +46,7 @@ class CommonQueryBuilderTests extends TestCase
 
     protected function getParserUnderTest($fields = null)
     {
-        return new QueryBuilderParser($fields);
+        return new QueryBuilderParserEloquent($fields);
     }
 
     /**
