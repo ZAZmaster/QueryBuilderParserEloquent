@@ -3,7 +3,7 @@ namespace zazmaster\test\mongodb;
 
 use Illuminate\Database\Capsule\Manager;
 use Jenssegers\Mongodb\Query\Builder;
-use Jenssegers\Mongodb\Query\Processor as MongoDBProcessor;
+use Jenssegers\Mongodb\Eloquent\Processor as MongoDBProcessor;
 use zazmaster\test\Mocks\Connection as MongoDBConnection;
 use zazmaster\test\CommonQueryBuilderTests;
 use MongoDB\Database;
